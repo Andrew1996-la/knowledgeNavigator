@@ -4,7 +4,12 @@ module.exports = {
     theme: {
         extend: {
             height: {
-              'header': '50px',
+                'header': '50px',
+                'sidebar': 'calc(100vh - 50px)',
+            },
+            width: {
+                'sidebar': '300px',
+                'sidebar-collapsed': '80px',
             },
             colors: {
                 light: {
