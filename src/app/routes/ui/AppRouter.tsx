@@ -5,7 +5,11 @@ export const AppRouter = () => {
     return (
         <Routes>
             {Object.values(routerConfig).map(({path, element}) => (
-                <Route key={path} path={path} element={element}/>
+                <Route key={path} path={path} element={(
+                    <div className='grow p-3'>
+                        {element}
+                    </div>
+                )}/>
             ))}
         </Routes>
     )

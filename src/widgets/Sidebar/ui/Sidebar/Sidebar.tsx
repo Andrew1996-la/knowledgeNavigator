@@ -11,13 +11,16 @@ export const Sidebar = () => {
 
     return (
         <aside className={clsx(
-            'h-sidebar text-dark-text bg-light-invertedBackground',
+            'h-sidebar relative text-dark-text bg-light-invertedBackground',
             'dark:bg-dark-invertedBackground dark:text-light-text',
             'transition-width duration-300 ',
             collapsed ? 'w-sidebar-collapsed' : 'w-sidebar'
         )}>
             <button onClick={toggleCollapse}>toggle</button>
-            <ThemeSwitcher/>
+            <div className='absolute bottom-5 flex justify-center w-full'>
+                <ThemeSwitcher/>
+                {/* тут будет переключатель языка */}
+            </div>
         </aside>
     )
 }

@@ -6,11 +6,10 @@ const App = () => {
     return (
             <div className="bg-light-background text-light-text dark:bg-dark-background dark:text-dark-text min-h-screen">
                 <Navbar />
-                <div>
+                <div className="flex">
                     <Sidebar />
                     <AppRouter />
                 </div>
-                {/*<ThemeSwitcher />*/}
             </div>
     );
 };
