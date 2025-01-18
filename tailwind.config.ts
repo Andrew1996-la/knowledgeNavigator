@@ -13,16 +13,16 @@ module.exports = {
             },
             colors: {
                 light: {
-                    background: '#F8F8F8',
-                    invertedBackground: '#121212',
+                    background: '#f4e8d9',
+                    invertedBackground: '#2f3e40',
                     text: '#2D2D2D',
                     primary: '#A8DADC',
                     secondary: '#F4A261',
                     accent: '#FFB4A2',
                 },
                 dark: {
-                    background: '#121212',
-                    invertedBackground: '#F8F8F8',
+                    background: '#2f3e40',
+                    invertedBackground: '#f4e8d9',
                     text: '#EDEDED',
                     primary: '#457B9D',
                     secondary: '#E76F51',
