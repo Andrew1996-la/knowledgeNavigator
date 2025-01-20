@@ -1,6 +1,7 @@
 import {useState} from "react";
 import clsx from "clsx";
 import {ThemeSwitcher} from "../../../ThemeSwitcher";
+import {LangSwitcher} from "../../../LangSwitcher";
 
 export const Sidebar = () => {
     const [collapsed, setCollapsed] = useState(false);
@@ -17,9 +18,9 @@ export const Sidebar = () => {
             collapsed ? 'w-sidebar-collapsed' : 'w-sidebar'
         )}>
             <button onClick={toggleCollapse}>toggle</button>
-            <div className='absolute bottom-5 flex justify-center w-full'>
+            <div className='absolute bottom-5 flex justify-center w-full gap-2 flex-wrap'>
                 <ThemeSwitcher/>
-                {/* тут будет переключатель языка */}
+                <LangSwitcher />
             </div>
         </aside>
     )
