@@ -1,7 +1,7 @@
 import {createRoot} from "react-dom/client";
 import './style.css';
-import App from "./app/App";
 import {BrowserRouter} from "react-router-dom";
+import App from "./app/App";
 import {ThemeProvider} from "./app/providers/theme/ui/ThemeProvider";
 import './shared/configs/i18n/i18n';
 

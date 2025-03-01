@@ -1,6 +1,6 @@
-import {AppLink} from "../../../shared/ui/AppLink/AppLink";
 import {FC} from "react";
 import {useTranslation} from "react-i18next";
+import {AppLink} from "../../../shared/ui/AppLink/AppLink";
 
 export const Navbar:FC = () => {
     const {t} = useTranslation();
