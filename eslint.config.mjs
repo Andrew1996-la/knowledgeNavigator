@@ -5,7 +5,7 @@ import importPlugin from "eslint-plugin-import";
 import jsxA11y from "eslint-plugin-jsx-a11y";
 import react from "eslint-plugin-react";
 import reactHooks from "eslint-plugin-react-hooks";
-import globals from "globals";
+import globals, { jest } from "globals";
 
 
 /** @type {import('eslint').Linter.Config[]} */
@@ -13,6 +13,9 @@ export default [
   // базовые настройки js
   {
     name: 'base-js-rules',
+    env: {
+      jest: true
+    },
     ...js.configs.recommended,
     languageOptions: {
       globals: {
