@@ -3,6 +3,12 @@ module.exports = {
     content: ['./src/**/*.{ts,tsx,html}'],
     theme: {
         extend: {
+            fontSize: {
+                'm': '1rem',      // ~ text-base (обычно 16px)
+                'l': '1.125rem',  // ~ text-lg (обычно 18px)
+                'xl': '1.25rem',  // ~ text-xl (обычно 20px)
+                '2xl': '1.5rem',  // ~ text-2xl (обычно 24px)
+            },
             height: {
                 'header': '50px',
                 'sidebar': 'calc(100vh - 50px)',

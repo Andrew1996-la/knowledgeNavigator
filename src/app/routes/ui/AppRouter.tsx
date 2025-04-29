@@ -8,7 +8,7 @@ export const AppRouter = () => {
                 <Route
                     key={path}
                     path={path}
-                    element={<div className='grow p-3'>{element}</div>}
+                    element={<div className='grow'>{element}</div>}
                 />
             ))}
         </Routes>

@@ -5,7 +5,7 @@ import App from "./app/App";
 import {ThemeProvider} from "./app/providers/theme/ui/ThemeProvider";
 import './shared/configs/i18n/i18n';
 
-const root = createRoot(document.getElementById('root'));
+const root = createRoot(document.getElementById('root') as HTMLElement);
 
 root.render(
     <>
