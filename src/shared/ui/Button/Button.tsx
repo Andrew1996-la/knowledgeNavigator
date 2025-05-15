@@ -1,8 +1,9 @@
 import {ButtonHTMLAttributes, FC} from "react";
-import clsx from "clsx";
+import { tv } from 'tailwind-variants'
 
 export enum ButtonTheme {
     CLEAR = 'clear',
+    DEFAULT = 'default',
 }
 
 interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement>{
@@ -10,19 +11,24 @@ interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement>{
     className?: string;
 }
 
+const button = tv({
+    base: 'm-0 px-4 py-2 text-base font-medium rounded-lg transition-colors duration-200 disabled:cursor-not-allowed',
+    variants: {
+        theme: {
+            default: 'bg-light-background text-light-text dark:bg-dark-background shadow-md',
+            clear: 'bg-transparent  hover:underline',
+        },
+    },
+    defaultVariants: {
+        theme: 'default',
+    },
+})
+
 export const Button:FC<ButtonProps> = (props) => {
     const { children, className, theme, ...otherProps } = props;
 
-    const classes = clsx(
-        'cursor-pointer',
-        {
-            'm-0 p-0 outline-none bg-none border-none': theme === ButtonTheme.CLEAR,
-        },
-        className
-    )
-
     return (
-        <button className={classes} {...otherProps}>
+        <button className={button({theme})} {...otherProps}>
             { children }
         </button>
     )
