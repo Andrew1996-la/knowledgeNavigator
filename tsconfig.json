@@ -4,6 +4,7 @@
     "noImplicitAny": true,
     "module": "esnext",
     "target": "es6",
+    "lib": ["esnext", "dom"],
     "strict": true,
     "jsx": "react-jsx",
     "allowJs": true,
