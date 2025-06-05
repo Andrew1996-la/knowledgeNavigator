@@ -16,7 +16,7 @@ const button = tv({
     variants: {
         theme: {
             default: 'bg-light-background text-light-text dark:bg-dark-background shadow-md',
-            clear: 'bg-transparent  hover:underline',
+            clear: 'bg-transparent  hover:underline ',
         },
     },
     defaultVariants: {
