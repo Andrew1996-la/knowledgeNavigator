@@ -20,7 +20,7 @@ export const Sidebar = () => {
                 collapsed ? 'w-sidebar-collapsed' : 'w-sidebar'
             )}
         >
-            <button data-testid='sidebar-test' onClick={toggleCollapse}>toggle</button>
+            <button data-testid='sidebar-btn' onClick={toggleCollapse}>toggle</button>
             <div className='absolute bottom-5 flex justify-center w-full gap-2 flex-wrap'>
                 <ThemeSwitcher />
                 <LangSwitcher />
