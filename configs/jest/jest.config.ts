@@ -29,6 +29,11 @@ const config: Config = {
     "**/?(*.)+(spec|test).[tj]s?(x)"
   ],
   setupFilesAfterEnv: ['<rootDir>/configs/jest/setupTest.ts'],
+  moduleNameMapper: {
+    '\\.svg$': '<rootDir>/configs/jest/svgMock.ts',
+      // '^@/(.*)$': '<rootDir>/src/$1' понадобится для алиасов при подключении
+
+  },
   rootDir: '../../'
 };
 

@@ -12,6 +12,7 @@ export const Sidebar = () => {
 
     return (
         <aside
+            data-testid='sidebar'
             className={clsx(
                 'h-sidebar relative text-dark-text bg-light-invertedBackground',
                 'dark:bg-dark-invertedBackground dark:text-light-text',
@@ -19,7 +20,7 @@ export const Sidebar = () => {
                 collapsed ? 'w-sidebar-collapsed' : 'w-sidebar'
             )}
         >
-            <button onClick={toggleCollapse}>toggle</button>
+            <button data-testid='sidebar-test' onClick={toggleCollapse}>toggle</button>
             <div className='absolute bottom-5 flex justify-center w-full gap-2 flex-wrap'>
                 <ThemeSwitcher />
                 <LangSwitcher />
